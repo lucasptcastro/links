@@ -65,4 +65,11 @@ ul li a {
 
   text-decoration: none; /* Retira o sublinhado do link */
   font-weight: 500; /* Deixa o texto em negrito */
+
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
 }
