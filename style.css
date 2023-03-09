@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Faz com que os paddings, margin sejam aplicados na caixa do elemento */
 }
 
 body {
@@ -45,7 +45,7 @@ ul {
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 16px; /* Espaçamento entre as colunas do flex-direction */
 }
 
 ul li a {
@@ -60,6 +60,9 @@ ul li a {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /* Deixa o fundo um pouco embaçado */
+  -webkit-backdrop-filter: blur(4px); /* Tag para funcionar no safari */
+
+  text-decoration: none; /* Retira o sublinhado do link */
+  font-weight: 500; /* Deixa o texto em negrito */
 }
