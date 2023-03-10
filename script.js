@@ -1,14 +1,15 @@
 function toggleMode() {
   const html = document.documentElement;
+  html.classList.toggle("light"); // altera a classe para light e vice-versa
+
+  const img = document.querySelector("#profile img");
 
   //   Se a classe tiver setada como light, a funcao remove. caso contrário, adiciona
-
-  //   if (html.classList.contains("light")) {
-  //     html.classList.remove("light");
-  //   } else {
-  //     html.classList.add("light");
-  //   }
-
-  // Faz o mesmo da funcao acima
-  html.classList.toggle("light");
+  if (html.classList.contains("light")) {
+    img.setAttribute("src", "./assets/avatar-light.png");
+    img.setAttribute("alt", "Foto de Lucas com fundo azul claro e azul escuro");
+  } else {
+    img.setAttribute("src", "./assets/avatar.png");
+    img.setAttribute("alt", "Foto de Lucas com fundo roxo e azul claro");
+  }
 }
