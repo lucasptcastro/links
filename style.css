@@ -62,6 +62,13 @@ body * {
 
 /* switch */
 
+#switch {
+  position: relative; /* Faz com que os filhos deste pai tenham posição relativa a ele */
+
+  width: 64px;
+  margin: 4px auto;
+}
+
 #switch button {
   height: 32px;
   width: 32px;
@@ -70,6 +77,16 @@ body * {
   border: 0;
 
   background: white var(--switch-bg-url) no-repeat center;
+
+  /* ALINHAMENTO AO CENTRO DE UM POSITION ABSOLUTE */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(
+    -50%
+  ); /* Faz com que a posição fique 50% acima em relação ao eixo y */
+
+  z-index: 1; /* Faz com que o botão se sobreponha ao span, se tornando prioritário */
 }
 
 #switch span {
