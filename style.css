@@ -29,6 +29,8 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; /* Cobre toda a página */
+
+  transition: background 0.5s;
 }
 
 body * {
@@ -67,9 +69,13 @@ body * {
 
   width: 64px;
   margin: 4px auto;
+
+  cursor: pointer;
 }
 
 #switch button {
+  cursor: pointer;
+
   height: 32px;
   width: 32px;
 
