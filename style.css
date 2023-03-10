@@ -81,12 +81,17 @@ body * {
   /* ALINHAMENTO AO CENTRO DE UM POSITION ABSOLUTE */
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   transform: translateY(
     -50%
   ); /* Faz com que a posição fique 50% acima em relação ao eixo y */
 
   z-index: 1; /* Faz com que o botão se sobreponha ao span, se tornando prioritário */
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 
 #switch span {
