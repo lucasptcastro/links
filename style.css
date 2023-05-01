@@ -12,6 +12,8 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url("./assets/moon-star.svg");
+
+  --bg-color: #081b29;
 }
 
 .light {
@@ -22,13 +24,17 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url("./assets/sun.svg");
+
+  --bg-color: white;
 }
 
 body {
-  background-image: var(--bg-url);
+  /* background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover; /* Cobre toda a página */
+  background-size: cover; Cobre toda a página */
+
+  background: var(--bg-color);
 
   transition: background 0.5s;
 }
