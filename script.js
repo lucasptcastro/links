@@ -6,10 +6,10 @@ function toggleMode() {
 
   //   Se a classe tiver setada como light, a funcao remove. caso contrário, adiciona
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "./assets/avatar-light.png");
+    img.setAttribute("src", "./assets/profile_light_avatar.png");
     img.setAttribute("alt", "Foto de Lucas com fundo azul claro e azul escuro");
   } else {
-    img.setAttribute("src", "./assets/avatar.png");
+    img.setAttribute("src", "./assets/profile_dark_avatar.png");
     img.setAttribute("alt", "Foto de Lucas com fundo roxo e azul claro");
   }
 }
